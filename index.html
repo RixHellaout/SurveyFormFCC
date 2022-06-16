@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>  
+        
+
+        <div id="contenedor">
+
+         <h1 id="title">Survey Form Example</h1>
+         <p id="description">This is a Form to help us improve the platform</p>
+
+        <form id="survey">
+            
+            <div class="grupo">
+                <label>Name<input type="text" name="Nombre" id="Nombre" placeholder="Enter your name"></label>
+            </div>
+            <div class="grupo">
+                <label>Email<input type="email" name="Email" id="Email" placeholder="Enter your email"></label>
+            </div>
+            <div class="grupo">
+                <label>Age (optional)<input type="number" name="Numero" min="10" max="99"  id="Numero" placeholder="Enter your age"></label>
+            </div>
+            <div class="grupo">
+                <label>Which option best describes your current role?</label>
+                <select name="Role" id="Rol">
+                    <option value="0">Select current Role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Full time learner</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                    
+                </select>
+
+            </div>
+            <div class="grupo">
+                <label>Would you recommend freeCodeCamp to a friend?</label>
+                    <label><input type="radio" name="recommend" id="rec1" class="inline"> Definitely</label>
+                    <label><input type="radio" name="recommend" id="rec2" class="inline"> Not sure</label>
+                    <label><input type="radio" name="recommend" id="rec3" class="inline"> Nope</label>
+            </div>
+            <div class="grupo">
+                <label>Which option best describes your current role?</label>
+                <select name="favfeature" id="feature">
+                    <option value="00">Select an option</option>
+                    <option value="01">Challenges</option>
+                    <option value="02">Projects</option>
+                    <option value="03">Community</option>
+                    <option value="04">Open Source </option>
+                    
+                </select>
+
+            </div>
+
+            <div class="grupo">
+                <label>What would you like to see improved? (Check all that apply)</label>
+                    <label><input type="checkbox"> Option 1</label>
+                    <label><input type="checkbox"> Option 2</label>
+                    <label><input type="checkbox"> Option 3</label>
+                    <label><input type="checkbox"> Option 4</label>
+                    <label><input type="checkbox"> Option 5</label>
+                    <label><input type="checkbox"> Option 6</label>
+                    <label><input type="checkbox"> Option 7</label>
+                    <label><input type="checkbox"> Option 8</label>
+                    <label><input type="checkbox"> Option 9</label>
+                    <label><input type="checkbox"> Option 10</label>
+                    <label><input type="checkbox"> Option 11</label>
+            </div>
+
+            <div class="grupo">
+                <label>Any comments or suggestions?</label>
+                <div id="textarea"><textarea name="" id="" placeholder="Enter your comment here..."></textarea></div>
+            </div>
+
+            <input type="submit" value="Submit" id="boton">
+        </form>
+
+        </div>
+
+    </main>
+</body>
+</html>
